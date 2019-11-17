@@ -1,0 +1,79 @@
+PS D:\WorkSpace\Docker\dockerCompose> docker-compose up
+selenium-hub is up-to-date
+Recreating dockercompose_firefox_1 ... done
+Recreating dockercompose_chrome_1  ... done
+Attaching to selenium-hub, dockercompose_firefox_1, dockercompose_chrome_1
+firefox_1       | 2019-11-14 17:17:08,812 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+firefox_1       | 2019-11-14 17:17:08,814 INFO supervisord started with pid 7
+chrome_1        | 2019-11-14 17:17:09,239 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+chrome_1        | 2019-11-14 17:17:09,242 INFO supervisord started with pid 7
+selenium-hub    | 2019-11-14 17:15:10,815 INFO Included extra file "/etc/supervisor/conf.d/selenium-hub.conf" during parsing
+selenium-hub    | 2019-11-14 17:15:10,869 INFO supervisord started with pid 9
+selenium-hub    | 2019-11-14 17:15:11,874 INFO spawned: 'selenium-hub' with pid 12
+selenium-hub    | Starting Selenium Hub with configuration:
+selenium-hub    | 2019-11-14 17:15:12,041 INFO success: selenium-hub entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+selenium-hub    | {
+selenium-hub    |   "host": "0.0.0.0",
+selenium-hub    |   "port": 4444,
+selenium-hub    |   "role": "hub",
+selenium-hub    |   "maxSession": 5,
+selenium-hub    |   "newSessionWaitTimeout": -1,
+selenium-hub    |   "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
+selenium-hub    |   "throwOnCapabilityNotPresent": true,
+selenium-hub    |   "jettyMaxThreads": -1,
+selenium-hub    |   "cleanUpCycle": 5000,
+selenium-hub    |   "browserTimeout": 0,
+selenium-hub    |   "timeout": 1800,
+selenium-hub    |   "debug": false
+selenium-hub    | }
+selenium-hub    | 17:15:21.990 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+selenium-hub    | 17:15:22.575 INFO [GridLauncherV3.lambda$buildLaunchers$5] - Launching Selenium Grid hub on port 4444
+selenium-hub    | 2019-11-14 17:15:23.982:INFO::main: Logging initialized @10277ms to org.seleniumhq.jetty9.util.log.StdErrLog
+selenium-hub    | 17:15:24.712 INFO [Hub.start] - Selenium Grid hub is up and running
+selenium-hub    | 17:15:24.717 INFO [Hub.start] - Nodes should register to http://172.19.0.2:4444/grid/register/
+selenium-hub    | 17:15:24.717 INFO [Hub.start] - Clients should connect to http://172.19.0.2:4444/wd/hub
+firefox_1       | 2019-11-14 17:17:09,819 INFO spawned: 'xvfb' with pid 10
+firefox_1       | 2019-11-14 17:17:09,825 INFO spawned: 'selenium-node' with pid 11
+chrome_1        | 2019-11-14 17:17:10,244 INFO spawned: 'xvfb' with pid 10
+chrome_1        | 2019-11-14 17:17:10,247 INFO spawned: 'selenium-node' with pid 11
+firefox_1       | 17:17:10.263 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+firefox_1       | 2019-11-14 17:17:10,267 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+firefox_1       | 2019-11-14 17:17:10,267 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+firefox_1       | 17:17:10.735 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Launching a Selenium Grid node on port 5555
+chrome_1        | 17:17:10.907 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+chrome_1        | 2019-11-14 17:17:10,915 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+chrome_1        | 2019-11-14 17:17:10,915 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+firefox_1       | 2019-11-14 17:17:11.036:INFO::main: Logging initialized @1117ms to org.seleniumhq.jetty9.util.log.StdErrLog
+chrome_1        | 17:17:11.307 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Launching a Selenium Grid node on port 5555
+chrome_1        | 2019-11-14 17:17:11.558:INFO::main: Logging initialized @1110ms to org.seleniumhq.jetty9.util.log.StdErrLog
+firefox_1       | 17:17:11.825 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+chrome_1        | 17:17:11.914 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+firefox_1       | 17:17:12.191 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5555
+firefox_1       | 17:17:12.191 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Selenium Grid node is up and ready to register to the hub
+chrome_1        | 17:17:12.195 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5555
+chrome_1        | 17:17:12.196 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Selenium Grid node is up and ready to register to the hub
+chrome_1        | 17:17:12.364 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+firefox_1       | 17:17:12.384 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+firefox_1       | 17:17:14.066 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://selenium-hub:4444/grid/register
+chrome_1        | 17:17:14.084 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://selenium-hub:4444/grid/register
+firefox_1       | 17:17:14.210 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+chrome_1        | 17:17:14.212 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+selenium-hub    | 17:17:14.210 INFO [DefaultGridRegistry.add] - Registered a node http://172.19.0.3:5555
+selenium-hub    | 17:17:14.216 INFO [DefaultGridRegistry.add] - Registered a node http://172.19.0.4:5555
+
+
+
+
+         Name                     Command           State           Ports
+----------------------------------------------------------------------------------
+dockercompose_chrome_1    /opt/bin/entry_point.sh   Up
+dockercompose_firefox_1   /opt/bin/entry_point.sh   Up
+selenium-hub              /opt/bin/entry_point.sh   Up      0.0.0.0:4445->4444/tcp
+
+
+PS D:\WorkSpace\Docker\dockerCompose> docker-compose down
+Removing dockercompose_chrome_1  ... done
+Removing dockercompose_firefox_1 ... done
+Removing selenium-hub            ... done
+Removing network dockercompose_default
+PS D:\WorkSpace\Docker\dockerCompose>
